@@ -3,7 +3,7 @@ pipeline {
 
     environment {// change the below to your jdk path
         JAVA_HOME = "D:\\Uni - UTAR\\jdk-25.0.2"
-        PATH = "${JAVA_HOME}\\\\bin;${env.PATH}"
+        PATH = "${JAVA_HOME}\\bin;${env.PATH}"
     }
 
     stages {
@@ -17,7 +17,7 @@ pipeline {
 
         stage('Checkout') { //change the below path to your repositoy url
             steps {
-                git branch: 'master', url: 'https://github.com/nawaf83/hello-world-java-6.git'
+                git branch: 'master', url: 'https://github.com/huiru88/P10_hello_world_java1.git'
             }
         }
 
